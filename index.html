@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Découvrez Mon Bot PC, un outil Windows d'analyse et de gestion des fichiers avec des paramètres personnalisables.">
+
+    <title>Mon Bot PC — Analyse et gestion des fichiers</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo" href="#accueil">
+            <span class="logo-icon">M</span>
+            <span>Mon Bot PC</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#fonctionnalites">Fonctionnalités</a>
+            <a href="#fonctionnement">Fonctionnement</a>
+            <a href="#securite">Sécurité</a>
+            <a class="nav-download" href="#telecharger">Télécharger</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" id="accueil">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="status-dot"></span>
+                    CONÇU POUR WINDOWS
+                </span>
+
+                <h1>Gérez vos fichiers.<br>
+                    <span class="gradient-text">Gardez le contrôle.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Mon Bot PC est un outil de bureau qui permet d'analyser
+                    les fichiers accessibles de votre ordinateur, de les
+                    consulter dans une interface et de choisir ceux que
+                    vous souhaitez envoyer vers la Corbeille Windows.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#telecharger" class="button button-primary">
+                        Découvrir le téléchargement
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="#fonctionnement" class="button button-secondary">
+                        Comment ça fonctionne ?
+                    </a>
+                </div>
+
+                <p class="small-note">
+                    La version publique est en préparation.
+                </p>
+            </div>
+
+            <div class="hero-visual" aria-label="Illustration de l'application">
+                <div class="glow"></div>
+
+                <div class="app-window">
+                    <div class="app-titlebar">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span>Mon Bot PC</span>
+                        <span class="window-symbol">●</span>
+                    </div>
+
+                    <div class="app-body">
+                        <div class="app-sidebar">
+                            <div class="sidebar-mark">M</div>
+                            <div class="sidebar-line active"></div>
+                            <div class="sidebar-line"></div>
+                            <div class="sidebar-line"></div>
+                        </div>
+
+                        <div class="app-content">
+                            <span class="mock-label">VOTRE ORDINATEUR</span>
+                            <h3>Analyse des fichiers</h3>
+                            <p class="mock-description">
+                                Une vue d'ensemble de vos fichiers.
+                            </p>
+
+                            <div class="mock-file">
+                                <span class="file-icon">▤</span>
+                                <div>
+                                    <strong>Document.pdf</strong>
+                                    <small>Document</small>
+                                </div>
+                                <span class="file-size">2,4 Mo</span>
+                            </div>
+
+                            <div class="mock-file">
+                                <span class="file-icon">▧</span>
+                                <div>
+                                    <strong>Image.jpg</strong>
+                                    <small>Image</small>
+                                </div>
+                                <span class="file-size">1,8 Mo</span>
+                            </div>
+
+                            <div class="mock-file">
+                                <span class="file-icon">▤</span>
+                                <div>
+                                    <strong>Archive.zip</strong>
+                                    <small>Archive</small>
+                                </div>
+                                <span class="file-size">12 Mo</span>
+                            </div>
+
+                            <div class="mock-footer">
+                                <span><span class="status-dot"></span> Interface de démonstration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="visual-caption">
+                    Illustration fictive du fonctionnement — pas une capture réelle.
+                </p>
+            </div>
+        </section>
+
+        <section class="feature-strip">
+            <div>
+                <span class="strip-icon">⌕</span>
+                <span>Analyse des fichiers</span>
+            </div>
+            <div>
+                <span class="strip-icon">◷</span>
+                <span>Fréquence personnalisable</span>
+            </div>
+            <div>
+                <span class="strip-icon">♧</span>
+                <span>Corbeille Windows</span>
+            </div>
+        </section>
+
+        <section class="section" id="fonctionnalites">
+            <div class="section-heading">
+                <span class="eyebrow">FONCTIONNALITÉS</span>
+                <h2>Un outil simple à utiliser</h2>
+                <p>
+                    Les fonctions principales de Mon Bot PC sont accessibles
+                    depuis une interface de bureau.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="card-icon">⌕</div>
+                    <h3>Analyse des fichiers</h3>
+                    <p>
+                        Parcourez les fichiers détectés sur les lecteurs
+                        accessibles et consultez leur nom, leur taille
+                        et leur chemin.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon">◷</div>
+                    <h3>Fréquence personnalisable</h3>
+                    <p>
+                        Choisissez une analyse manuelle ou un intervalle
+                        automatique de 30 minutes à 24 heures.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon">♧</div>
+                    <h3>Gestion des fichiers</h3>
+                    <p>
+                        Sélectionnez les fichiers affichés et demandez
+                        leur envoi vers la Corbeille Windows après
+                        confirmation.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon">⚙</div>
+                    <h3>Paramètres enregistrés</h3>
+                    <p>
+                        La fréquence choisie est enregistrée pour
+                        être retrouvée lors des prochaines ouvertures
+                        du programme.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon">▣</div>
+                    <h3>Interface de bureau</h3>
+                    <p>
+                        Lancez une analyse, consultez les résultats
+                        et revenez au menu principal quand vous avez terminé.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-icon">⛨</div>
+                    <h3>Précautions intégrées</h3>
+                    <p>
+                        Des dossiers et extensions sensibles sont exclus
+                        de l'analyse selon les règles intégrées au programme.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="fonctionnement">
+            <div class="section-heading">
+                <span class="eyebrow">PRISE EN MAIN</span>
+                <h2>Comment fonctionne Mon Bot PC ?</h2>
+                <p>Voici les étapes générales d'utilisation du programme.</p>
+            </div>
+
+            <div class="steps">
+                <article class="step">
+                    <span class="step-number">01</span>
+                    <h3>Lancez le programme</h3>
+                    <p>
+                        Ouvrez Mon Bot PC et choisissez de lancer une analyse
+                        ou de modifier la fréquence des cycles.
+                    </p>
+                </article>
+
+                <article class="step">
+                    <span class="step-number">02</span>
+                    <h3>Consultez les résultats</h3>
+                    <p>
+                        Examinez les noms, les tailles et les chemins
+                        des fichiers affichés.
+                    </p>
+                </article>
+
+                <article class="step">
+                    <span class="step-number">03</span>
+                    <h3>Décidez de la suite</h3>
+                    <p>
+                        Si nécessaire, sélectionnez les fichiers voulus
+                        et confirmez leur envoi vers la Corbeille.
+                    </p>
+                </article>
+            </div>
+
+            <div class="info-banner">
+                <span class="info-icon">ⓘ</span>
+                <div>
+                    <strong>À propos des cycles automatiques</strong>
+                    <p>
+                        Les cycles programmés dépendent de la configuration
+                        et de l'état du programme. Ils ne garantissent pas
+                        une exécution si l'application est arrêtée ou si
+                        Windows n'est pas en fonctionnement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="securite">
+            <div class="section-heading">
+                <span class="eyebrow">INFORMATIONS IMPORTANTES</span>
+                <h2>À lire avant utilisation</h2>
+                <p>
+                    Utilisez le programme avec prudence et vérifiez toujours
+                    les éléments affichés.
+                </p>
+            </div>
+
+            <div class="security-panel">
+                <article class="security-item">
+                    <span class="security-icon">!</span>
+                    <div>
+                        <h3>Vérifiez les chemins</h3>
+                        <p>
+                            L'analyse peut afficher des documents personnels.
+                            Ne sélectionnez pas un fichier si vous ne savez
+                            pas à quoi il sert.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="security-item">
+                    <span class="security-icon">!</span>
+                    <div>
+                        <h3>Les protections ne sont pas infaillibles</h3>
+                        <p>
+                            Le programme exclut certains dossiers et types
+                            de fichiers, mais cela ne garantit pas que tous
+                            les fichiers importants seront reconnus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="security-item">
+                    <span class="security-icon">!</span>
+                    <div>
+                        <h3>La Corbeille n'est pas une sauvegarde</h3>
+                        <p>
+                            Un fichier peut ne pas pouvoir être restauré
+                            dans certaines situations. Conservez une copie
+                            de vos données importantes avant toute opération.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="security-item">
+                    <span class="security-icon">!</span>
+                    <div>
+                        <h3>Le programme n'est pas un antivirus</h3>
+                        <p>
+                            Mon Bot PC ne doit pas être considéré comme
+                            un outil de détection de virus, de réparation
+                            de Windows ou de récupération de données.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="download-section" id="telecharger">
+            <div class="download-content">
+                <span class="eyebrow">TÉLÉCHARGEMENT</span>
+                <h2>Mon Bot PC arrive bientôt.</h2>
+                <p>
+                    La page de téléchargement sera activée lorsque
+                    la version publique aura été préparée et publiée.
+                </p>
+
+                <button class="button button-disabled" disabled>
+                    Téléchargement bientôt disponible
+                </button>
+
+                <p class="small-note">
+                    Ne téléchargez pas de fichier provenant d'une source
+                    non vérifiée prétendant être la version officielle.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo footer-logo" href="#accueil">
+            <span class="logo-icon">M</span>
+            <span>Mon Bot PC</span>
+        </a>
+
+        <p>
+            Outil Windows indépendant. Utilisez-le avec prudence.
+        </p>
+
+        <p class="copyright">
+            © <span id="year"></span> Mon Bot PC
+        </p>
+    </footer>
+</body>
+</html>
